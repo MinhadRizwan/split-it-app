@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./keyframe.css">
+    <link rel="stylesheet" href="./debt-container.css">
+    <link rel="stylesheet" href="./cards.css">
+
+    <script defer src="./index.js"></script>
+    <script defer src="./slider.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="icon">
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/split.png" alt="split" />
+                <h3>Split It</h3>
+            </div>
+            <div class="nav-btn">
+                <button class="login">Login</button>
+                <button class="signup">Signup</button>
+            </div>
+        </div>
+        <div class="slider">
+            <div id="left" class="left"><img onclick="previousImg()" width="40" height="40"
+                    src="https://img.icons8.com/ios-glyphs/30/circled-left.png" alt="circled-left" />
+            </div>
+
+            <div id="slider-image" class="slider-img">
+            </div>
+
+            <div id="right" class="right"><img onclick="nextImg()" width="40" height="40"
+                    src="https://img.icons8.com/ios-glyphs/30/circled-right.png" alt="circled-right" />
+            </div>
+        </div>
+        <div class="start-content">
+            <h2>Wanna Start Calculating Expenses ?</h2>
+            <h3>Start Now !</h3>
+            <img class="bounce" width="64" height="64" src="https://img.icons8.com/sf-black/64/down.png" alt="down" />
+        </div>
+        <div class="expense-container">
+            <div class="total-expense">
+                <h2>Total Expense </h2>
+            </div>
+        </div>
+        <div class="users-content-container">
+            <div class="users-content">
+                <div class="users">
+                    <div class="user-icon">Minhad Rizwan<img class="icon-img" width="30" height="30"
+                            onclick="showInput()" src="https://img.icons8.com/ios-glyphs/30/add--v1.png"
+                            alt="add--v1" /></div>
+                    <div class="user-icon">Hasan Iqbal<img class="icon-img" width="30" height="30"
+                            onclick="showInput2()" src="https://img.icons8.com/ios-glyphs/30/add--v1.png"
+                            alt="add--v1" /></div>
+                    <div class="user-icon">Faizan Ahmad<img class="icon-img" width="30" height="30"
+                            onclick="showInput3()" src="https://img.icons8.com/ios-glyphs/30/add--v1.png"
+                            alt="add--v1" /></div>
+                    <div class="user-icon">Shams Raza<img class="icon-img" width="30" height="30" onclick="showInput4()"
+                            src="https://img.icons8.com/ios-glyphs/30/add--v1.png" alt="add--v1" /></div>
+                </div>
+                <div class="add-input">
+                    <div class="add-input-icons"><input type="number" id="add-input1" placeholder="Add Amount"
+                            value="" /><img class="icon-img" id="add-input-img1" onclick="showExpense()" width="30"
+                            height="30" src="https://img.icons8.com/ios-glyphs/30/checked--v1.png" alt="checked--v1" />
+                    </div>
+                    <div class="add-input-icons"><input type="number" id="add-input2" placeholder="Add Amount"
+                            value="" /><img class="icon-img" id="add-input-img2" onclick="showExpense2()" width="30"
+                            height="30" src="https://img.icons8.com/ios-glyphs/30/checked--v1.png" alt="checked--v1" />
+                    </div>
+                    <div class="add-input-icons"><input type="number" id="add-input3" placeholder="Add Amount"
+                            value="" /><img class="icon-img" id="add-input-img3" onclick="showExpense3()" width="30"
+                            height="30" src="https://img.icons8.com/ios-glyphs/30/checked--v1.png" alt="checked--v1" />
+                    </div>
+                    <div class="add-input-icons"><input type="number" id="add-input5" placeholder="Add Amount"
+                            value="" /><img class="icon-img" id="add-input-img5" onclick="showExpense4()" width="30"
+                            height="30" src="https://img.icons8.com/ios-glyphs/30/checked--v1.png" alt="checked--v1" />
+                    </div>
+                </div>
+                <div class="total">
+                    <!-- <h3>Expenses</h3> -->
+                    <div class="total-icon"><span>Mr :<p id="expense1">0</p> </span><img class="icon-img" width="40"
+                            height="40" onclick="addExpense()"
+                            src="https://img.icons8.com/ios-filled/50/long-arrow-right.png" alt="long-arrow-right" />
+                        <span>Total : <p id="expense2">0</p> </span>
+                    </div>
+                    <div class="total-icon"><span>HI :<p id="expense3">0</p> </span><img class="icon-img" width="40"
+                            height="40" onclick="addExpense2()"
+                            src="https://img.icons8.com/ios-filled/50/long-arrow-right.png" alt="long-arrow-right" />
+                        <span>Total : <p id="expense4">0</p> </span>
+                    </div>
+                    <div class="total-icon"><span>FA :<p id="expense5">0</p> </span><img class="icon-img" width="40"
+                            height="40" onclick="addExpense3()"
+                            src="https://img.icons8.com/ios-filled/50/long-arrow-right.png" alt="long-arrow-right" />
+                        <span>Total : <p id="expense6">0</p> </span>
+                    </div>
+                    <div class="total-icon"><span>SR :<p id="expense7">0</p> </span><img class="icon-img" width="40"
+                            height="40" onclick="addExpense4()"
+                            src="https://img.icons8.com/ios-filled/50/long-arrow-right.png" alt="long-arrow-right" />
+                        <span>Total : <p id="expense8">0</p> </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="total-amount-container">
+            <div class="total-amount">
+                <h2>Total Amount :</h2>
+                <p id="total_amount">0</p>
+            </div>
+        </div>
+        <div class="note-container">
+            <div class="note">
+                <div> <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/idea--v1.png"
+                        alt="idea--v1" />
+                </div>
+                <div class="note-p">
+                    <h2>NOTE : Clearance Amount </h2>
+                    <p>Positive values indciate that the user 'gets' the amount.</p>
+                    <p>Negative values indciate that the user 'pays' the amount.</p>
+                </div>
+            </div>
+        </div>
+        <div class="debt-filter">
+            <div class="debt-each">
+                <h4 class="equal">The total amount equally divided between per head (4 members) is :&nbsp;Rs&nbsp;<p
+                        id="equal_amount"></p>
+                </h4>
+                <!-- <div class="users_debt">
+                    <ul>
+                        Minhad
+                        <li>Clearance Amount : &nbsp;<p id="minhad_give">0</p>
+                        </li>
+                        <li>Has to get :&nbsp;<p id="minhad_get">00</p></li>
+                    </ul>
+                    <ul>
+                        Hasan
+                        <li>Clearance Amount : &nbsp;<p id="hasan_amount">0</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        Faizan
+                        <li>Clearance Amount : &nbsp;<p id="faizan_amount">0</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        Shams
+                        <li>Clearance Amount : &nbsp;<p id="shams_amount">0</p>
+                        </li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="cards-subcontainer">
+                <div class="cards">
+                    <div class="card">
+                        <img width="67" height="67"
+                            src="https://img.icons8.com/external-others-inmotus-design/67/000000/external-M-qwerty-keypad-others-inmotus-design-2.png"
+                            alt="external-M-qwerty-keypad-others-inmotus-design-2" />
+                        Minhad Rizwan
+                    </div>
+                    <div class="card-content">
+                        <span>Total Amount : &nbsp;
+                            <p id="total_amount2">0</p>
+                        </span>
+                        <span>Average Amount : &nbsp;
+                            <p id="equal_amount2">0</p>
+                        </span>
+                        <span>Clearance Amount :&nbsp;
+                            <p id="minhad_give">0</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <img width="67" height="67"
+                            src="https://img.icons8.com/external-others-inmotus-design/67/external-H-qwerty-keypad-others-inmotus-design-3.png"
+                            alt="external-H-qwerty-keypad-others-inmotus-design-3" /> Hasan Iqbal
+                    </div>
+                    <div class="card-content">
+                        <span>Total Amount : &nbsp;
+                            <p id="total_amount3">0</p>
+                        </span>
+                        <span>Average Amount : &nbsp;
+                            <p id="equal_amount3">0</p>
+                        </span>
+                        <span>Clearance Amount :&nbsp;
+                            <p id="hasan_amount">0</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <img width="67" height="67"
+                            src="https://img.icons8.com/external-others-inmotus-design/67/external-F-qwerty-keypad-others-inmotus-design-3.png"
+                            alt="external-F-qwerty-keypad-others-inmotus-design-3" /> Faizan Ahmad
+                    </div>
+                    <div class="card-content">
+                        <span>Total Amount : &nbsp;
+                            <p id="total_amount4">0</p>
+                        </span>
+                        <span>Average Amount : &nbsp;
+                            <p id="equal_amount4">0</p>
+                        </span>
+                        <span>Clearance Amount :&nbsp;
+                            <p id="faizan_amount">0</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <img width="67" height="67"
+                            src="https://img.icons8.com/external-others-inmotus-design/67/external-S-qwerty-keypad-others-inmotus-design-2.png"
+                            alt="external-S-qwerty-keypad-others-inmotus-design-2" /> Shams Raza
+                    </div>
+                    <div class="card-content">
+                        <span>Total Amount : &nbsp;
+                            <p id="total_amount5">0</p>
+                        </span>
+                        <span>Average Amount : &nbsp;
+                            <p id="equal_amount5">0</p>
+                        </span>
+                        <span>Clearance Amount :&nbsp;
+                            <p id="shams_amount">0</p>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

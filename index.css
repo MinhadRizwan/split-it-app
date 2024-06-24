@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: monospace;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar {
+    width: 100%;
+    height: 10vh;
+    box-shadow: 0 0 10px rgb(180, 174, 174);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.icon h3 {
+    margin-left: 10px;
+}
+
+.nav-btn .signup {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+}
+
+.nav-btn .login {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #d5daeb;
+}
+
+.nav-btn {
+    margin-right: 50px;
+}
+
+.slider {
+    /* background-color: black; */
+    border-radius: 5px;
+    width: 95%;
+    height: 50vh;
+    margin-top: 40px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px grey;
+}
+
+.slider-img {
+    /* background-color: aqua; */
+    width: 93%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-img img {
+    width: 900px;
+}
+
+.left img, .right img{
+    cursor: pointer;
+}
+
+.start-content {
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+}
+
+.start-content img{
+    margin-top: 20px;
+}
+.users-content-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.users-content{
+    width: 87%;
+    height: 53vh;
+    /* margin-left: 30px; */
+    /* margin-top: 100px; */
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.users{
+    width: 30%;
+    height: 50vh;
+    /* background-color: violet; */
+}
+.users div{
+    height: 8vh;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+
+.user-icon{
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.total-icon{
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.add-input{
+    width: 25%;
+    height: 50vh;
+    /* background-color: violet; */
+}
+
+.add-input .add-input-icons{
+    height: 8vh;
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-input-icons input{
+    height: 7vh;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 10px;
+    /* display: none; */
+}
+
+#add-input-img1,#add-input-img2,#add-input-img3,#add-input-img4,#add-input-img5{
+    display: none;
+}
+
+#add-input1,#add-input2,#add-input3,#add-input4,#add-input5{
+    display: none;
+}
+
+.total{
+    width: 35%;
+    height: 50vh;
+    /* background-color: violet; */
+}
+
+.total div{
+    height: 8vh;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 10px;
+}
+.total-amount-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.total-amount{
+    width: 87%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    height: 50px;
+    border-radius: 4px;
+    padding: 20px;
+    font-family: monospace;
+}
+
+.total-amount p{
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: monospace;
+}
+
+.expense-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.total-expense{
+    width: 87%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    height: 50px;
+    border-radius: 4px;
+    padding: 10px;  
+    margin-top: 120px;
+}
+
+span{
+    display: flex;
+}
+
+#expense1, #expense2,#expense3,#expense4,#expense5,#expense6,#expense7,#expense8{
+    width: 50px;
+    margin-left: 10px;
+    /* background-color: black; */
+}
+
+.icon-img{
+    cursor: pointer;
+}
+
+.note-container{
+    width: 100%;
+    margin-top: 40px;
+    /* background-color: violet; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.note{
+    background-color: yellow;
+    width: 87%;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+.note div{
+    padding: 30px;
+}
+
+.note-p{
+    font-size: 16px;
+}
